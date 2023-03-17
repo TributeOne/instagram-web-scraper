@@ -1,11 +1,26 @@
 # Instagram Web Scraper
 
 ### _English:_
-[TOC]
+ 
+English:
+- [Scope-of-functions](#Scope-of-functions):
+  - [Features](#Features):
+  - [Disadvantages](#Disadvantages):
+- [Installation](#Installation):
+- [Setup](#Setup):
+- [Documentation](#Documentation):
+
+German:
+- [Funktionsumfang](#Funktionsumfang):
+  - [Features](#Features):
+  - [Nachteile](#Nachteile):
+- [Installation](#Installation):
+- [Einrichtung](#Einrichtung):
+- [Dokumentation](#Dokumentation):
 
 This is an MVP of the Instagram Web Scraper that I developed in my spare time.
 
-#### Features:
+#### Scope-of-functions:
 
 Automatic scraping of the story carousel including _userName_ , _storySeen_ and _profileImage_.
 
@@ -20,19 +35,19 @@ Instagram Web Scraper is a web scraper that extracts all the information you nee
 
 I'm extremely annoyed with how Instagram is being ruined by Meta. Instagram Reels are extremely addictive, which is why I would love to delete the app. However, since I still want to stay in touch with my friends, I had the idea to create my own very superficial clone for personal use. The clone should allow me to view only my friends' stories and feed.
 
-#####Features:
+##### Features:
 
 - Instagram can no longer access my microphone or indirectly read data from my phone.
 - I can filter my feed by date again like before.
 - I can filter out ads automatically.
 
-#####Disadvantages:
+##### Disadvantages:
 
 - No more DMs available.
 - Story feature set is severely limited.
 - In general, images and feed load a bit slower than directly in the app.
 
-####Installation:
+#### Installation:
 
 Just download the project with the command:
 
@@ -43,7 +58,7 @@ Download the required dependencies:
 
 > `$ yarn`
 
-####Installation:
+#### Installation:
 
 In the `index.ts` you need to specify the path where your web browser is located that you want to use.
 
@@ -62,21 +77,21 @@ Run the program with the command:
 
 First of all, you should start Webscraper once and log in to Instagram. Make sure you check the _"Stay logged in"_ box.
 
-####Documentation:
+#### Documentation:
 
 In the directory `src/stories/storyCarousel` you can find the files `storyCarousel.ts` and`storyCarouselButtons.ts`.
 
 In the file `storyCarouselButtons.ts` there is a class in which the functions for clicking the buttons are implemented:
 
-`storyCarouselButton.click.nextOnInit`: This function clicks the first time on the right arrow in the carousel. The parameter _"OnInit"_ is needed because the XPath of the buttons changes after the first click.
+- `storyCarouselButton.click.nextOnInit`: This function clicks the first time on the right arrow in the carousel. The parameter _"OnInit"_ is needed because the XPath of the buttons changes after the first click.
 
-storyCarouselButton.click.next`: This function allows to click the right arrow in the carousel after the first click.
+- `storyCarouselButton.click.next`: This function allows to click the right arrow in the carousel after the first click.
 
-storyCarouselButton.click.back`: This function allows you to click the left arrow in the carousel after the first click.
+- `storyCarouselButton.click.back`: This function allows you to click the left arrow in the carousel after the first click.
 
-`storyCarouselButton.checkAvailability`: This function returns _"true"_ if the button _"OnInit"_ exists. It could happen that the user is shown too few available stories, so that the continue button does not exist at all.
+- `storyCarouselButton.checkAvailability`: This function returns _"true"_ if the button _"OnInit"_ exists. It could happen that the user is shown too few available stories, so that the continue button does not exist at all.
 
-`storyCarouselButton.checkAvailability`: When the end of the carousel is reached, the button disappears.
+- `storyCarouselButton.checkAvailability`: When the end of the carousel is reached, the button disappears.
 
 In the file `storyCarousel.ts` the data in the story carousel is recorded. The code is commented to explain how each function works.
 
@@ -88,11 +103,26 @@ If you are interested in helping to develop the scraper, feel free to contact me
 
 ---
 ### _German:_
-[TOC]
+
+English:
+- [Scope-of-functions](#Scope-of-functions):
+  - [Features](#Features):
+  - [Disadvantages](#Disadvantages):
+- [Installation](#Installation):
+- [Setup](#Setup):
+- [Documentation](#Documentation):
+
+German:
+- [Funktionsumfang](#Funktionsumfang):
+  - [Features](#Features):
+  - [Nachteile](#Nachteile):
+- [Installation](#Installation):
+- [Einrichtung](#Einrichtung):
+- [Dokumentation](#Dokumentation):
 
 Dies ist ein MVP des Instagram Web Scrapers, den ich in meiner Freizeit entwickelt habe.
 
-####Funktionsumfang:
+#### Funktionsumfang:
 
 Automatisches Scrapen des Story-Carousels inkl. _userName_ , _storySeen_ und _profileImage_.
 
@@ -107,19 +137,19 @@ Instagram Web Scraper ist ein Webscraper, der alle benötigten Informationen dir
 
 Ich bin extrem davon genervt, wie Instagram von Meta ruiniert wird. Instagram Reels machen extrem süchtig, weshalb ich die App am liebsten löschen würde. Da ich aber immer noch in Kontakt mit meinen Freunden bleiben möchte, hatte ich die Idee, einen eigenen sehr oberflächlichen Klon für private Zwecke zu entwickeln. Der Klon soll es mir ermöglichen, ausschließlich die Storys und den Feed meiner Freunde anzusehen.
 
-#####Features:
+##### Features:
 
 - Instagram kann nicht mehr auf mein Mikrofon zugreifen oder indirekt Daten von meinem Handy auslesen.
 - Ich kann meinen Feed wieder wie früher nach Datum filtern.
 - Ich kann Werbung automatisch ausfiltern.
 
-#####Nachteile:
+##### Nachteile:
 
 - Keine DMs mehr verfügbar.
 - Story-Funktionsumfang wird stark eingeschränkt.
 - Allgemein laden Bilder und Feed etwas langsamer als direkt in der App.
 
-####Installation:
+#### Installation:
 
 Laden Sie das Projekt einfach mit dem Befehl herunter:
 
@@ -130,7 +160,7 @@ Laden Sie die benötigten Abhängigkeiten herunter:
 
 > `$ yarn`
 
-####Einrichtung:
+#### Einrichtung:
 
 In der `index.ts` müssen Sie den Pfad angeben, in dem sich Ihr Webbrowser befindet, den Sie verwenden möchten.
 
@@ -149,21 +179,21 @@ Führen Sie das Programm mit dem Befehl aus:
 
 Zuallererst sollten Sie einmal den Webscraper starten und sich bei Instagram anmelden. Achten Sie darauf, dass Sie den Haken bei _"Angemeldet bleiben"_ setzen.
 
-####Dokumentation:
+#### Dokumentation:
 
 In dem Verzeichnis `src/storys/storyCarousel` sind die Dateien `storyCarousel.ts`  und`storyCarouselButtons.ts` zu finden.
 
 In der Datei `storyCarouselButtons.ts` befindet sich eine Klasse, in der die Funktionen zum Klicken der Buttons implementiert sind:
 
-`storyCarouselButton.click.nextOnInit`: Diese Funktion klickt das erste Mal auf den Pfeil nach rechts im Carousel. Der Parameter _"OnInit"_ wird benötigt, da sich der XPath der Buttons nach dem ersten Klick ändert.
+- `storyCarouselButton.click.nextOnInit`: Diese Funktion klickt das erste Mal auf den Pfeil nach rechts im Carousel. Der Parameter _"OnInit"_ wird benötigt, da sich der XPath der Buttons nach dem ersten Klick ändert.
 
-`storyCarouselButton.click.next`: Diese Funktion ermöglicht das Klicken auf den Pfeil nach rechts im Carousel, nachdem bereits das erste Mal geklickt wurde.
+- `storyCarouselButton.click.next`: Diese Funktion ermöglicht das Klicken auf den Pfeil nach rechts im Carousel, nachdem bereits das erste Mal geklickt wurde.
 
-`storyCarouselButton.click.back`: Diese Funktion ermöglicht das Klicken auf den Pfeil nach links im Carousel, nachdem bereits das erste Mal geklickt wurde.
+- `storyCarouselButton.click.back`: Diese Funktion ermöglicht das Klicken auf den Pfeil nach links im Carousel, nachdem bereits das erste Mal geklickt wurde.
 
-`storyCarouselButton.checkAvailability`: Diese Funktion gibt _"true"_ zurück, falls der Button _"OnInit"_  existiert. Es könnte vorkommen, dass der Benutzer zu wenige verfügbare Storys angezeigt bekommt, sodass der Weiter-Button gar nicht existiert.
+- `storyCarouselButton.checkAvailability`: Diese Funktion gibt _"true"_ zurück, falls der Button _"OnInit"_  existiert. Es könnte vorkommen, dass der Benutzer zu wenige verfügbare Storys angezeigt bekommt, sodass der Weiter-Button gar nicht existiert.
 
-`storyCarouselButton.checkAvailability`: Wenn das Ende des Carousels erreicht wird, verschwindet der Button.
+- `storyCarouselButton.checkAvailability`: Wenn das Ende des Carousels erreicht wird, verschwindet der Button.
 
 In der Datei `storyCarousel.ts` werden die Daten im Story Carousel aufgenommen. Der Code ist kommentiert, um die Funktionsweise der einzelnen Funktionen zu erklären.
 
@@ -171,4 +201,4 @@ Weitere Dokumentationen und Tests werden folgen. :)
 
 Falls du Interesse daran hast, den Scraper mitzuentwickeln, kontaktiere mich gerne auf Discord: [TributeOne#2542][anchor-id].
 
-[anchor-id]: https://discord.gg/user/TributeOne#2542# instagram-web-scraper
+[anchor-id]: https://discord.gg/user/TributeOne#2542#
