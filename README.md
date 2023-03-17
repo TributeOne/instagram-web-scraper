@@ -5,7 +5,7 @@
 
 This is an MVP of the Instagram Web Scraper that I developed in my spare time.
 
-####Features:
+#### Features:
 
 Automatic scraping of the story carousel including _userName_ , _storySeen_ and _profileImage_.
 
